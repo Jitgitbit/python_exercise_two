@@ -8,3 +8,6 @@ def home(request):
 
 def eggs(request):
 	return HttpResponse('<h1>Eggs are great!</h1>')
+
+def password(request):
+	return render(request, 'generator/password.html')
