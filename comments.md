@@ -1,7 +1,10 @@
 pip3 install django
 django-admin
 
-rm -rf <python-exercise-two>/.git   NOPE   in directory:   rm -rf .git
+REMOVING from git locally
+1) (first remove it from github)
+2) rm -rf <python-exercise-two>/.git   NOPE -->  in directory:   rm -rf .git
+3) (now remove the directory itself too)
 
 START:
 django-admin startproject python_exercise_two
