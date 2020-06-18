@@ -14,7 +14,8 @@ def password(request):
 
 	characters = list('abcdefghijklmnopqrstuvwxyz')
 
-	length = 10
+	# length taken from the URI, otherwise default is 7
+	length = int(request.GET.get('length', 7))                  
 
 	thePassword = ''
 	for x in range(length):
