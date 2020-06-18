@@ -22,3 +22,5 @@ DONE
 python3 manage.py runserver    ------>   http://127.0.0.1:8000/   
 
 (wsgi.py is for deployment)
+
+python3 manage.py startapp generator ---> creates an app within the project !
