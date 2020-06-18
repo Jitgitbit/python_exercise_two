@@ -14,6 +14,18 @@ def password(request):
 
 	characters = list('abcdefghijklmnopqrstuvwxyz')
 
+	# with this extend the new list will have both lower and uppercase
+	if request.GET.get('uppercase'):
+		characters.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+	
+	# with this extend the new list will have both lower and uppercase and special characters
+	if request.GET.get('special'):
+		characters.extend(list('!@#$%^&*()'))
+
+	# with this extend the new list will have both lower and uppercase and special characters and numbers
+	if request.GET.get('numbers'):
+		characters.extend(list('0987654321'))
+
 	# length taken from the URI, otherwise default is 7
 	length = int(request.GET.get('length', 7))                  
 
